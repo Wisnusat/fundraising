@@ -6,6 +6,7 @@ import 'screens/payment_confirmation_screen.dart';
 import 'screens/transaction_history_screen.dart';
 import 'screens/signin_screen.dart';
 import 'screens/signup_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/signin': (context) => LoginScreen(),
         '/signup': (context) => SignUpScreen(),
+        '/home': (context) => HomePage(),
         '/topup': (context) => TopupScreen(),
         '/payment-method': (context) => PaymentMethodScreen(),
         '/payment-confirmation': (context) => PaymentConfirmationScreen(),
