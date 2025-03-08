@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fundraising/screens/onboard.dart';
 import 'screens/topup_screen.dart';
 import 'screens/payment_method_screen.dart';
 import 'screens/payment_confirmation_screen.dart';
@@ -43,8 +44,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: '/signin',
+      initialRoute: '/',
       routes: {
+        '/': (context) => SplashScreen(),
         '/signin': (context) => LoginScreen(),
         '/signup': (context) => SignUpScreen(),
         '/topup': (context) => TopupScreen(),
